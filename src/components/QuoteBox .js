@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import quotes from '../quotes.json'
 
-const colors = ['red', 'lighblue', 'yellow', 'lightgreen', 'lightcoral', 'black']
+const colors = ['#845EC2', '#D65DB1', '#FF6F91', '#FF9671', '#FFC75F','#F9F871']
 
 const QuoteBox  = () => {
 
@@ -27,7 +27,7 @@ const QuoteBox  = () => {
             <h1><i class="fa-solid fa-quote-left"></i>{quotes[index].quote}</h1>
             <h2>{quotes[index].author}</h2>
             <button onClick={changeQuote}>
-                <i className="fa-solid fa-circle-chevron-right fa-2xl"></i>
+                <i className="fa-solid fa-circle-chevron-right fa-2xl" style={styles}></i>
             </button>
         </div>
     );

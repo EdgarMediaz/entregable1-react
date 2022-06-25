@@ -26,10 +26,13 @@
   text-align: right;
 }
 
-button{
+.card button{
   background-color: transparent;
   border: none;
   align-self: flex-end;
+}
+.card button i{
+  cursor: pointer;
 }
 
 
